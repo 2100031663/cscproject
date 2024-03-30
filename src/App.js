@@ -8,7 +8,7 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
-
+//working 
 function App({ signOut }) {
   return (
     <View className="App">
