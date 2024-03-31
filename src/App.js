@@ -10,7 +10,7 @@ import {
   TextField,
   View,
   withAuthenticator,
-  //work
+  
 } from "@aws-amplify/ui-react";
 import { listNotes } from "./graphql/queries";
 import {
@@ -24,7 +24,7 @@ const App = ({ signOut }) => {
   useEffect(() => {
     fetchNotes();
   }, []);
-
+//working
   async function fetchNotes() {
     const apiData = await API.graphql({ query: listNotes });
     const notesFromAPI = apiData.data.listNotes.items;
